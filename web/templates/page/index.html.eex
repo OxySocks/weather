@@ -1,0 +1,11 @@
+<%= for m <- @measurements do %>
+  <div class="col-xs-12 text-center">
+    <h1>Computerkamer</h1>
+    <h2 class="identifier">Tijdstip</h2>
+    <h2 class="value"><%= m.inserted_at %></h2>
+    <h2 class="identifier">Temperatuur</h2>
+    <h2 class="value"><%= m.temperature %>&#176;C</h2>
+    <h2 class="identifier">Luchtvochtigheid</h2>
+    <h2 class="value"><%= m.humidity %>%</h2>
+  </div>
+<% end %>
